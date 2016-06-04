@@ -1,6 +1,4 @@
-from parser_properties import ParserProperties
 from website_downloader import WebsiteDownloader
-from website_generator import WebsiteGenerator
 from bs4 import BeautifulSoup
 
 
