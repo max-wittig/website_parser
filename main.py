@@ -1,7 +1,12 @@
 from website_parser import WebsiteParser
+from parser_properties import ParserProperties
+
 
 def main():
-    parser = WebsiteParser()
+    properties = ParserProperties()
+    properties.source_url = "http://www.golem.de/"
+    properties.tags_to_download = ["img", "h2"]
+    parser = WebsiteParser(properties)
     pass
 
 
