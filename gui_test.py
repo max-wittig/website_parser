@@ -11,7 +11,7 @@ def main():
     website_label.pack(side=TOP)
     website_input.pack(side=TOP)
 
-    tag_label = Label(top, text="tabs:")
+    tag_label = Label(top, text="tags:")
     tag_input = Entry(top)
     tag_input.pack(side=BOTTOM)
     tag_label.pack(side=BOTTOM)
