@@ -7,4 +7,4 @@ class WebsiteDownloader:
 
     def download(self, url):
         request = self.http.request('GET', url)
-        return request.status
+        return request.data
