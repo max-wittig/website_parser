@@ -1,2 +1,7 @@
 .idea
 *.iml
+__pycache__/
+parser_properties.pyc
+website_downloader.pyc
+website_parser.pyc
+index.html
