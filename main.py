@@ -8,10 +8,11 @@ from these tags"""
 
 def main():
     properties = ParserProperties()
-    properties.source_url = "https://news.ycombinator.com/news"
-    properties.tags_to_download = ["a"]
+    properties.source_url = "https://devhumor.com/"
+    properties.tags_to_download = ["img", "h2"]
+    properties.output_filename = "index.html"
     parser = WebsiteParser(properties)
-    generator = WebsiteGenerator()
+    generator = WebsiteGenerator(properties)
     generator.generate(parser.html_tags_dict)
 
 if __name__ == "__main__":

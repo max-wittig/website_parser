@@ -1,5 +1,5 @@
 class WebsiteGenerator:
-    def __init__(self):
+    def __init__(self, properties):
         self.init_html = """<!DOCTYPE html>
 <html>
 <head>
@@ -11,6 +11,7 @@ class WebsiteGenerator:
 </html>
 """
         self.between_html = ""
+        self.output_filename = properties.output_filename
         self.html = None
 
     def generate(self, html_tags_dict):
@@ -28,5 +29,5 @@ class WebsiteGenerator:
 
     def save_website(self):
         if self.html is not None:
-            with open("index.html", "w") as f:
+            with open(self.output_filename, "w") as f:
                 f.write(self.html)
