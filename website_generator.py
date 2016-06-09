@@ -3,6 +3,7 @@ class WebsiteGenerator:
         self.init_html = """<!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 </head>
 <body>
 """

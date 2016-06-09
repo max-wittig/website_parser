@@ -10,6 +10,7 @@ from these tags
 -t --tags '<arg1> <arg..n>' specify html tags to get from page      e.g. -t "img p h1 h2"
 -o --output <arg>           specify output filename                 e.g. -o index.html
 -d --debug                  inserts test values in required fields
+
 -------------------------
 """
 
@@ -48,8 +49,8 @@ def main():
         elif o in ("-o", "--output"):
             properties.output_filename = a
         elif o in ("-d", "--debug"):
-            properties.source_url = "https://devhumor.com/"
-            properties.tags_to_download = ["img", "h2"]
+            properties.source_url = "http://www.golem.de/"
+            properties.tags_to_download = ["img"]
         else:
             assert False, "unhandled option"
 
